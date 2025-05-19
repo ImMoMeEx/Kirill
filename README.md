@@ -94,7 +94,7 @@ View my notebook with detailed steps here: [Skills_Trend.ipynb](Advanced%20Chapt
 ```python
 from matplotlib.ticker import PercentFormatter
 
-df_plot = df_DA_US_percent.iloc[:, :5]
+df_plot = df_DA_DE_percent.iloc[:, :5]
 sns.lineplot(data=df_plot, dashes=False, legend='full', palette='tab10')
 
 plt.gca().yaxis.set_major_formatter(PercentFormatter(decimals=0))
