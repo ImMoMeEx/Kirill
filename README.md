@@ -54,7 +54,7 @@ df_DE = df[df['job_country'] == 'Germany']
 ## 1. What are the most demanded skills for the top 3 most popular data roles?
 To find the most demanded skills for the top 3 most popular data roles I filtered out those positions by which ones were the most popular, and got the top 5 skills for these top 3 roles. This query highlights the most popular job titles and their top skills, showing which skills I should pay attention to depending on the role I'm targeting.
 
-View my notebook with detailed steps here: [Skills_Count.ipynb](<Advanced Chapter\Project\2. Skills_Count.ipynb>)
+View my notebook with detailed steps here: [Skills_Count.ipynb](Advanced%20Chapter/Project/2.%20Skills_Count.ipynb)
 
 ### Visualize data
 ```python
@@ -68,7 +68,7 @@ for i, job_title in enumerate(job_titles):
 plt.show()
 ```
 ### Results
-![Visualization of Top Skills for Data Nerds](images\Skill_demand_all_data_roles.png)
+![Visualization of Top Skills for Data Nerds](Advanced%20Chapter/Project/images/Skill_demand_all_data_roles.png)
 
 ### Insights:
 #### 1. SQL and Python Dominate Across All Roles
@@ -88,7 +88,7 @@ Azure and AWS are much more frequently requested for Data Engineers and Scientis
 ## 2. How are in-demand skills trending for Data Analysts?
 To find how skills are trending in 2023 for Data Analysts, I filtered data analyst positions and grouped the skills by the month of the job postings. This got me the top 5 skills of data analysts by month, showing how popular skills were throughout 2023.
 
-View my notebook with detailed steps here: [Skills_Trend.ipynb](<Advanced Chapter\Project\3. Skills_Trend.ipynb>).
+View my notebook with detailed steps here: [Skills_Trend.ipynb](Advanced%20Chapter/Project/3.%20Skills_Trend.ipynb).
 
 ### Visualize data
 ```python
@@ -102,7 +102,7 @@ plt.gca().yaxis.set_major_formatter(PercentFormatter(decimals=0))
 plt.show()
 ```
 ### Results
-![Trending Top Skills for Data Analysts in Germany](images\Skill_trend.png)
+![Trending Top Skills for Data Analysts in Germany](Advanced%20Chapter/Project/images/Skill_trend.png)
 
 ### Insights
 #### 1. SQL Remains the Dominant Skill Throughout 2023
@@ -124,7 +124,7 @@ Even during periods of decline (e.g., September), it maintains a higher likeliho
 ## 3. What are the highest paid & most demanded skills for Data Analysts?
 To identify the highest-paying roles and skills, I only got jobs in Germany and looked at their median salary. Next, I narrowed my analysis and focused only on data analyst roles. I looked at the highest-paid skills and the most in-demand skills. I used two bar charts to showcase these.
 
-View my notebook with detailed steps here: [Salary_Analysis.ipynb](<Advanced Chapter\Project\4. Salary_Analysis.ipynb>)
+View my notebook with detailed steps here: [Salary_Analysis.ipynb](Advanced%20Chapter/Project/4.%20Salary_Analysis.ipynb)
 
 ### Visualize data
 ```python
@@ -140,7 +140,7 @@ plt.show()
 ```
 ### Results
 Here's the breakdown of the highest-paid & most in-demand skills for data analysts in Germany:
-![Highest paid skills and most in-demand skills for data analysts in Germany](images\Salary_Analysis.png)
+![Highest paid skills and most in-demand skills for data analysts in Germany](Advanced%20Chapter/Project/images/Salary_Analysis.png)
 
 ### Insights
 #### High-Paying Skills Are Less In-Demand
@@ -151,7 +151,7 @@ Python, Spark, Pandas, Excel, and SQL are the most in-demand skills for data ana
 ## 4. What are the most optimal skills to learn for Data Analysts?
 To identify the most optimal skills to learn (the ones that are the highest paid and highest in demand) I calculated the percent of skill demand and the median salary of these skills. To easily identify which are the most optimal skills to learn.
 
-View my notebook with detailed steps here: [Optimal_Skills.ipynb](<Advanced Chapter\Project\5. Optimal_Skills.ipynb>)
+View my notebook with detailed steps here: [Optimal_Skills.ipynb](Advanced%20Chapter/Project/5.%20Optimal_Skills.ipynb)
 
 ### Visualize data
 ```python
@@ -162,7 +162,7 @@ plt.scatter(df_DA_skills_high_demand['skill_percent'], df_DA_skills_high_demand[
 plt.show()
 ```
 ### Results
-![Optimal Skills for Data Analysts](images\Uncolored_skills.png)
+![Optimal Skills for Data Analysts](Advanced%20Chapter/Project/images/Uncolored_skills.png)
 
 ### Insights
 #### Balancing Salary and Demand
@@ -190,7 +190,7 @@ scatter = sns.scatterplot(
 plt.show()
 ```
 ### Results
-![Optimimal skills colorized](images\Optimal_Skills.png)
+![Optimal skills colorized](Advanced%20Chapter/Project/images/Optimal_Skills.png)
 
 ### Insights
 - The scatter plot shows that most of the programming skills (colored blue) tend to cluster at higher salary levels compared to other categories, indicating that programming expertise might offer greater salary benefits within the data analytics field.
