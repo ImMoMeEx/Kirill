@@ -1,0 +1,49 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-196fdb50d1c-7570aaf8969b452b": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "contoso",
+			"save-password": true,
+			"virtual-model-id": "postgres-jdbc-196fdac1fde-49a9dd6e5a80b514",
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "contoso",
+				"url": "jdbc:postgresql://localhost:5432/contoso",
+				"configurationType": "MANUAL",
+				"home": "postgresql-x64-17",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-chosen-role@": ""
+				},
+				"auth-model": "native"
+			},
+			"custom-properties": {
+				"SQLEditor.setSelectionToStatisticsTab": "false",
+				"script.sql.delimiter.blank": "ONLY_SEPARATOR",
+				"sql.format.break.before.close.bracket": "true",
+				"sql.format.keywordCase": "UPPER"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	}
+}
